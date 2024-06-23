@@ -4,27 +4,27 @@ section#mail
 		p.mail-text Задайте интересующие вопросы 
 			br
 			| и мы свяжемся в ближайшее время
-		form(action='' class='form' method='POST').form
+		form(action='send.php' class='form' method='POST').form
 			.radios
 				.radio
-					input(name='radio' id='radio-1' type='radio' value='' checked).radio-dot
+					input(name='radio' id='radio-1' type='radio' value='Сlever' checked).radio-dot
 					label(for="radio-1").radio-label Сlever
 				.radio
-					input(name='radio' id='radio-2' type='radio' value='').radio-dot
+					input(name='radio' id='radio-2' type='radio' value='Азбука публичных коммуникаций').radio-dot
 					label(for="radio-2").radio-label Азбука публичных коммуникаций
 				.radio
-					input(name='radio' id='radio-3' type='radio' value='').radio-dot
+					input(name='radio' id='radio-3' type='radio' value='Радоваться и радовать других').radio-dot
 					label(for="radio-3").radio-label Радоваться и радовать других
 				.radio
-					input(name='radio' id='radio-4' type='radio' value='').radio-dot
+					input(name='radio' id='radio-4' type='radio' value='Фандрайзинг на каблучках').radio-dot
 					label(for="radio-4").radio-label Фандрайзинг на каблучках
 				.radio
-					input(name='radio' id='radio-5' type='radio' value='').radio-dot
+					input(name='radio' id='radio-5' type='radio' value='Другое').radio-dot
 					label(for="radio-5").radio-label Другое
 			.inputs
-				input.input.input-name(type='text' name='name' value='' placeholder='Ваше имя')
-				input.input.input-mail(type='text' name='email' value='' placeholder='e-mail')
-				input.input.input-tel(type='tel' name='tel' value='' placeholder='Телефон ')
+				input.input.input-name(type='text' name='name' placeholder='Ваше имя')
+				input.input.input-mail(type='text' name='email' placeholder='e-mail')
+				input.input.input-tel(type='tel' name='tel' placeholder='Телефон ')
 				textarea.form-textarea(name='textarea' placeholder='Сообщение')
 			p.alert-message
 			.submits

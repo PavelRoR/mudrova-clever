@@ -1,0 +1,2 @@
+# ErrorDocument 404 /404/index.php
+# Disallow: /404/index.php

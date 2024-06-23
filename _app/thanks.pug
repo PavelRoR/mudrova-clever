@@ -1,0 +1,53 @@
+-var path = '../';
+-var head_url = 'https://cleverano.ru/thanks/';
+-var head_title = 'Спасибо! Мы получили Вашу заявку и свяжемся с Вами ближайшее время';
+//-var head_description = '';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/styles.min.css';
+-var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+//-var libs = path+'js/libs.min.js';
+//-var scripts = path+'js/scripts.min.js';
+//- -var noref = true
+//- -var action = '';
+//- -var group = '';
+//- -var formId = '';
+//- -var formVc = '';
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+//- -var ak = true
+
+mixin img(cl,src,alt)
+	img(class=cl src!=path+src alt=alt)
+mixin gt(cl, img, h3)
+	.general-title(class=cl)
+		+img('', img, h3!=h3)
+		h3!=h3
+mixin b(cl, href, p, id, target)
+	a.button(class=cl href=href id=id target=target)!=p
+mixin it(cl, img, h4, p)
+	.item(class=cl)
+		+img('item-img', img, p)
+		if h4
+			h4.item-title!=h4
+		p.item-text!=p
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/thanks/1-main
+			//- include pug/main/2-target
+			//- include pug/main/3-for
+			//- include pug/main/4-projects
+			//- include pug/main/5-founders
+			//- include pug/main/6-mail
+		//include pug/base/2-footer
+		//include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
