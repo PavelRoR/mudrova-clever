@@ -1,13 +1,43 @@
 #main
 	padding 120px 0 50px
-	background url("../img/backs/main.svg") no-repeat left 300px top 0
-	background-size auto
+	// background url("../img/backs/main.png") no-repeat right -475px top 0
+	// // background url("../img/backs/main.png") no-repeat left 300px top 0
+	// background-size auto
+	// // width 100%
+	// // max-width 1920px
+	// // margin 0 auto
+	@media screen and (max-width 560px)
+		padding: 200px 0 20px
 .main
+	&-logo
+		@media screen and (max-width 991px)
+			width 153
+			height: 156px
+	&-img
+		position absolute
+		width auto
+		top -120px
+		// right -575px
+		left 220px
+		@media screen and (max-width 991px)
+			top -200px
+			left 120px
+		@media screen and (max-width 560px)
+			width 743px
+			left -80px
+			right 0
+			margin 0 auto
+			top -260px
+		@media screen and (max-width 386px)
+			left -120px
 	&-title
 		font-size: 32px
 		font-weight: bold
 		text-transform uppercase
 		margin 150px 0 30px
+		@media screen and (max-width 560px)
+			font-size: 20px
+			margin 30px 0
 		span
 			display block
 			color #CCCCCC

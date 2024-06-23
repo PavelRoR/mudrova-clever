@@ -3,16 +3,24 @@
 	background: #10347E url(../img/backs/mail.png) no-repeat center center
 	background-size: cover
 	color #fff
+	@media screen and (max-width 560px)
+		padding 40px 0
 .mail-text
 	font-size: 24px
 	width 100%
 	max-width 455px
 	margin-bottom: 60px
+	@media screen and (max-width 560px)
+		font-size: 16px
+		margin-bottom: 30px
 .radios
 	display flex
 	align-items: center
 	justify-content: space-between
 	margin-bottom: 60px
+	@media screen and (max-width 767px)
+		flex-direction: column
+		margin-bottom: 15px
 .radio
 	font-size: 14px
 	color #fff
@@ -26,6 +34,8 @@
 	align-items: center
 	justify-content: space-between
 	flex-wrap wrap
+	@media screen and (max-width 767px)
+		flex-direction: column
 .input
 .form-textarea
 	display block
@@ -35,8 +45,15 @@
 	font-size: 14px
 	color #7D7470
 	background-color #fff
-	width 100%
-	max-width 350px
+	// width 100%
+	// max-width 350px
+	width 30%
+	@media screen and (max-width 767px)
+		width 100%
+		margin-bottom: 20px
+// .input
+// 	@media screen and (max-width 1199px)
+// 		width 30%
 ::-webkit-input-placeholder
 	color:#7D7470
 	opacity:1;
@@ -61,14 +78,22 @@ input:-webkit-autofill
 input:-internal-autofill-selected
 	background-color: #FFF !important
 .form-textarea
-	max-width 100%
-	margin: 60px 0
+	width 100%
+	margin-top: 60px
 	min-height 120px
+	@media screen and (max-width 767px)
+		margin-top: 0
 .submits
+	margin-top: 60px
 	display flex
 	align-items: center
 	justify-content: space-between
 	width 100%
+	@media screen and (max-width 767px)
+		margin-top: 10px
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
 .alert-message
 	clear both
 	display: none;
@@ -78,12 +103,24 @@ input:-internal-autofill-selected
 	text-align: center
 	font-weight: bold
 	line-height: 1
+	margin: 30px 0 -30px
+	@media screen and (max-width 767px)
+		margin -15px 0 5px
 .checking
 .radio
 	display: flex;
 	flex-direction: row
 	align-items: center
 	justify-content: flex-start
+.checking
+	@media screen and (max-width 767px)
+		margin-bottom: 25px
+.radio
+	@media screen and (max-width 1199px)
+		width 24%
+	@media screen and (max-width 767px)
+		width 100%
+		margin-bottom: 20px
 .checking .check-label
 .radio .radio-label
 	line-height: 20px;
@@ -113,6 +150,8 @@ input:-internal-autofill-selected
 	border none
 	border-radius: 50%
 	border: 1px solid #7D7470
+.radio .radio-label:before
+	top calc(50% - 10px)
 .checking .check-label:after
 .radio .radio-label:after
 	content: '';
@@ -127,6 +166,8 @@ input:-internal-autofill-selected
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+.radio .radio-label:after
+	top calc(50% - 5px)
 .check
 .radio-dot
 	position: absolute;
@@ -146,3 +187,5 @@ input:-internal-autofill-selected
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+.radio-dot:checked + .radio-label:after
+	top calc(50% - 5px)
