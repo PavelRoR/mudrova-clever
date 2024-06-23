@@ -1,0 +1,37 @@
+-var path = '';
+-var head_url = 'https://cleverano.ru/';
+-var head_title = 'Миссия АНО РЦ "Клевер" - развивая высшие психические функции у детей и молодежи, создавать основу будущего';
+//-var head_description = '';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/styles.min.css';
+-var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var libs = path+'js/libs.min.js';
+-var scripts = path+'js/scripts.min.js';
+//- -var noref = true
+//- -var action = '';
+//- -var group = '';
+//- -var formId = '';
+//- -var formVc = '';
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+//- -var ak = true
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/main/1-main
+			include pug/main/2-target
+			include pug/main/3-for
+			include pug/main/4-projects
+			include pug/main/5-founders
+			include pug/main/6-mail
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
