@@ -18,6 +18,21 @@
 //- -var oferta = 'https://mastervision.su/oferta.docx'
 //- -var ak = true
 
+mixin img(cl,src,alt)
+	img(class=cl src!=src alt=alt)
+mixin gt(cl, img, h3)
+	.general-title(class=cl)
+		+img('general-title-img', img, h3!=h3)
+		h3!=h3
+mixin b(cl, href, p, id, target)
+	a.button(class=cl href=href id=id target=target)!=p
+mixin it(cl, img, h4, p)
+	.item
+		+img('item-img', img, p)
+		if h4
+			h4.item-title!=h4
+		p.item-text!=p
+
 doctype html
 html(lang="ru")
 	head
@@ -32,6 +47,7 @@ html(lang="ru")
 			include pug/main/4-projects
 			include pug/main/5-founders
 			include pug/main/6-mail
+		include pug/base/2-footer
 		include pug/base/3-scripts
 		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts
