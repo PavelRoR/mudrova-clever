@@ -1,9 +1,15 @@
 footer
 	.container
 		+img('footer-img', 'img/images/qr.png', 'QR-Code')
-		a.footer-link.footer-link-email ОТПРАВИТЬ E-MAIL
-		a.footer-link УСТАВ АНО РЦ CLEVER
-		a.footer-link Свидетельство о&nbsp;государственной регистрации
-		a.footer-link Свидетельство о&nbsp;постановке на&nbsp;налоговый учет
-		p.footer-text ОГРН
-		p.footer-text реквизиты
+		p.footer-text
+			a.footer-link.footer-link-email(href='#mail') ОТПРАВИТЬ E-MAIL
+		p.footer-text
+			a.footer-link(href='docs/regulation.pdf' target='_blank') УСТАВ АНО РЦ CLEVER
+		p.footer-text
+			a.footer-link(href='docs/registration.pdf' target='_blank') Свидетельство о государственной регистрации
+		p.footer-text
+			a.footer-link(href='docs/accounting.pdf' target='_blank') Свидетельство о постановке на налоговый учет
+		p.footer-text
+			a.footer-link(href='docs/ogrn.pdf' target='_blank') ОГРН
+		p.footer-text
+			a.footer-link(href='docs/requisites.pdf' target='_blank') Реквизиты

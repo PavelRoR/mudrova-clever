@@ -22,12 +22,12 @@ mixin img(cl,src,alt)
 	img(class=cl src!=src alt=alt)
 mixin gt(cl, img, h3)
 	.general-title(class=cl)
-		+img('general-title-img', img, h3!=h3)
+		+img('', img, h3!=h3)
 		h3!=h3
 mixin b(cl, href, p, id, target)
 	a.button(class=cl href=href id=id target=target)!=p
 mixin it(cl, img, h4, p)
-	.item
+	.item(class=cl)
 		+img('item-img', img, p)
 		if h4
 			h4.item-title!=h4

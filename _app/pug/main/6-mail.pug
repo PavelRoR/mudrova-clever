@@ -1,6 +1,6 @@
 section#mail
 	.container
-		+gt('general-title-white', 'img/icons/title-icon-white.svg', 'МЫ ВСЕГДА ОТКРЫТЫ ДЛЯ СОТРУДНИЧЕСТВА И ИНТЕРЕСНЫХ ПРЕДЛОЖЕНИЙ')
+		+gt('', 'img/icons/title-icon-white.svg', 'МЫ ВСЕГДА ОТКРЫТЫ ДЛЯ СОТРУДНИЧЕСТВА И ИНТЕРЕСНЫХ ПРЕДЛОЖЕНИЙ')
 		p.mail-text Задайте интересующие вопросы 
 			br
 			| и мы свяжемся в ближайшее время
@@ -8,29 +8,29 @@ section#mail
 			form(action='' class='form' method='POST')
 				.radios
 					.radio
-						input(name='radio' id='radio-1' type='radio' value='')
+						input(name='radio' id='radio-1' type='radio' value='' checked).radio-dot
 						label(for="radio-1").radio-label Сlever
 					.radio
-						input(name='radio' id='radio-2' type='radio' value='')
+						input(name='radio' id='radio-2' type='radio' value='').radio-dot
 						label(for="radio-2").radio-label Азбука публичных коммуникаций
 					.radio
-						input(name='radio' id='radio-3' type='radio' value='')
+						input(name='radio' id='radio-3' type='radio' value='').radio-dot
 						label(for="radio-3").radio-label Радоваться и радовать других
 					.radio
-						input(name='radio' id='radio-4' type='radio' value='')
-						label(for="radio-4").radio-label Фандрайзинг на&nbsp;каблучках
+						input(name='radio' id='radio-4' type='radio' value='').radio-dot
+						label(for="radio-4").radio-label Фандрайзинг на каблучках
 					.radio
-						input(name='radio' id='radio-5' type='radio' value='')
+						input(name='radio' id='radio-5' type='radio' value='').radio-dot
 						label(for="radio-5").radio-label Другое
 				.inputs
 					input.input.name(type='text' name='name' value='' placeholder='Ваше имя')
 					input.input.email(type='text' name='email' value='' placeholder='e-mail')
 					input.input.tel(type='tel' name='tel' value='' placeholder='Телефон ')
-				textarea.form-textarea(name='textarea' placeholder='Сообщение')
+					textarea.form-textarea(name='textarea' placeholder='Сообщение')
 				.submits
 					.checking
-						input(type="checkbox" id="check-2").check
-						label(for="check-2").check-label Я принимаю 
+						input(type="checkbox" id="check-1").check
+						label(for="check-1").check-label Я принимаю 
 							a(href="" target="_blank") условия
 							|  передачи информации
 					button.button.button-form(type='submit') Отправить заявку

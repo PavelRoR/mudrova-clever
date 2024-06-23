@@ -1,0 +1,148 @@
+#mail
+	padding 60px 0
+	background: #10347E url(../img/backs/mail.png) no-repeat center center
+	background-size: cover
+	color #fff
+.mail-text
+	font-size: 24px
+	width 100%
+	max-width 455px
+	margin-bottom: 60px
+.radios
+	display flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 60px
+.radio
+	font-size: 14px
+	color #fff
+	display flex
+	align-items: center
+	justify-content: flex-start
+	// &-label
+	// 	margin-left: 10px
+.inputs
+	display flex
+	align-items: center
+	justify-content: space-between
+	flex-wrap wrap
+.input
+.form-textarea
+	display block
+	border: 1px solid rgba(#7D7470, .5)
+	padding 19px 12px
+	font-family: L
+	font-size: 14px
+	color #7D7470
+	background-color #fff
+	width 100%
+	max-width 350px
+::-webkit-input-placeholder
+	color:#7D7470
+	opacity:1;
+::-moz-placeholder
+	color:#7D7470
+	opacity:1;
+:-moz-placeholder
+	color:#7D7470
+	opacity:1;
+:-ms-input-placeholder
+	color:#7D7470
+	opacity:1;
+@-webkit-keyframes autofill
+	to
+		font-size: 14px
+		color: #7D7470;
+		background-color: #FFF
+input:-webkit-autofill
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+.input:active
+input:-internal-autofill-selected
+	background-color: #FFF !important
+.form-textarea
+	max-width 100%
+	margin: 60px 0
+	min-height 120px
+.submits
+	display flex
+	align-items: center
+	justify-content: space-between
+	width 100%
+.alert-message
+	clear both
+	display: none;
+	font-size: 16px;
+	padding-top: 10px;
+	color: #f00
+	text-align: center
+	font-weight: bold
+	line-height: 1
+.checking
+.radio
+	display: flex;
+	flex-direction: row
+	align-items: center
+	justify-content: flex-start
+.checking .check-label
+.radio .radio-label
+	line-height: 20px;
+	cursor: pointer;
+	position: relative;
+	padding: 0 0 0 30px;
+	text-align: left;
+	font-size: 14px
+.checking .check-label a
+	text-decoration: underline
+	color #fff
+	&:focus
+		text-decoration: underline
+		color #fff
+	&:hover
+		text-decoration: none
+		color #fff
+.checking .check-label:before
+.radio .radio-label:before
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	border none
+	border-radius: 50%
+	border: 1px solid #7D7470
+.checking .check-label:after
+.radio .radio-label:after
+	content: '';
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 10px;
+	height: 10px;
+	background-color: #113080;
+	opacity: 0;
+	border-radius: 50%
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+.check
+.radio-dot
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+.check:checked + .check-label:before
+.radio-dot:checked + .radio-label:before
+	background-color: #fff
+.check:checked + .check-label:after
+.radio-dot:checked + .radio-label:after
+	opacity: 1;
+	top: 5px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
