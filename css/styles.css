@@ -203,7 +203,7 @@ footer {
 .item {
   margin-bottom: 70px;
   width: 100%;
-  max-width: 505px;
+  max-width: 535px;
 }
 @media screen and (max-width: 991px) {
   .item {
@@ -226,6 +226,22 @@ footer {
 @media screen and (max-width: 560px) {
   .item-2 {
     font-size: 16px;
+  }
+}
+.item-480 {
+  max-width: 480px;
+}
+@media screen and (max-width: 991px) {
+  .item-480 {
+    max-width: 100%;
+  }
+}
+.item-455 {
+  max-width: 455px;
+}
+@media screen and (max-width: 991px) {
+  .item-455 {
+    max-width: 100%;
   }
 }
 .item-blue {
@@ -256,6 +272,11 @@ footer {
   .item-title {
     font-size: 20px;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mob-none {
+    display: none;
   }
 }
 #main {
@@ -294,7 +315,7 @@ footer {
   }
 }
 .main-title {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 150px 0 30px;
