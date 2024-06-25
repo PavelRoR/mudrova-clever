@@ -4,13 +4,21 @@ section#founders
 		.row
 			.col-md-6
 				.founder
-					+img('founder-img', 'img/images/marfa.png', 'Марфа Мудрова')
+					picture.founder-img
+						source(srcset=path+"img/images/marfa.webp" type="image/webp" alt="Марфа Мудрова")
+						source(srcset=path+"img/images/marfa.png" type="image/png" alt="Марфа Мудрова")
+						+img('', 'img/images/marfa.webp', 'Марфа Мудрова')
+					//- +img('founder-img', 'img/images/marfa.png', 'Марфа Мудрова')
 					h4.founder-title Марфа Мудрова
 					p.founder-text директор, 
 						br
 						| руководитель проекта CLEVER
 			.col-md-6
 				.founder
-					+img('founder-img', 'img/images/ilya.png', 'Илья Мясников')
+					picture.founder-img
+						source(srcset=path+"img/images/ilya.webp" type="image/webp" alt="Илья Мясников")
+						source(srcset=path+"img/images/ilya.png" type="image/png" alt="Илья Мясников")
+						+img('', 'img/images/ilya.webp', 'Илья Мясников')
+					//- +img('founder-img', 'img/images/ilya.png', 'Илья Мясников')
 					h4.founder-title Илья Мясников
 					p.founder-text продюсер, руководитель проекта АЗБУКА ПУБЛИЧНЫХ КОММУНИКАЦИЙ

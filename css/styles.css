@@ -287,15 +287,10 @@ footer {
 @media screen and (max-width: 560px) {
   .main-img {
     width: 743px;
-    left: -80px;
+    left: -75px;
     right: 0;
     margin: 0 auto;
-    top: -260px;
-  }
-}
-@media screen and (max-width: 386px) {
-  .main-img {
-    left: -120px;
+    top: -200px;
   }
 }
 .main-title {
@@ -462,6 +457,9 @@ footer {
 }
 .founder-img {
   display: block;
+  width: 100%;
+}
+.founder-img img {
   width: 100%;
 }
 .founder-title {

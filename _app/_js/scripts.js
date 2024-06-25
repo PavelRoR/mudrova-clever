@@ -18,19 +18,19 @@ $(document).ready(function() {
             var check = $('.check', this),
                 message = $('.alert-message', this),
                 reNone = /.+/,
-                email = $('.input-mail', this),
-                tel = $('.input-tel', this),
-                area = $('.form-textarea', this);
+                email = $('.input-mail', this);
+                // tel = $('.input-tel', this),
+                // area = $('.form-textarea', this);
             if (!email.val().match(reNone)) {
                 email.css('borderColor','red');
                 message.text('Введите email').slideDown(500);
                 return false;
             }
-            if (!tel.val().match(reNone)) {
-                tel.css('borderColor','red');
-                message.text('Введите телефон').slideDown(500);
-                return false;
-            }
+            // if (!tel.val().match(reNone)) {
+            //     tel.css('borderColor','red');
+            //     message.text('Введите телефон').slideDown(500);
+            //     return false;
+            // }
             if (!check.prop("checked")) {
                 check.next().css({
                     'color': 'red',
@@ -56,10 +56,10 @@ $(document).ready(function() {
             email.css('border','none');
             message.slideUp(500);
         });
-        tel.click(function () {
-            tel.css('border','none');
-            message.slideUp(500);
-        });
+        // tel.click(function () {
+        //     tel.css('border','none');
+        //     message.slideUp(500);
+        // });
         check.click(function () {
             check.next().css({
                 "color": "#fff",

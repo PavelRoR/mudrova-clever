@@ -1,6 +1,10 @@
 footer
 	.container
-		+img('footer-img', 'img/images/qr.png', 'QR-Code')
+		picture.footer-img
+			source(srcset=path+"img/images/qr.webp" type="image/webp" alt="QR-Code")
+			source(srcset=path+"img/images/qr.png" type="image/png" alt="QR-Code")
+			+img('', 'img/images/qr.webp', 'QR-Code')
+		//- +img('footer-img', 'img/images/qr.png', 'QR-Code')
 		p.footer-text
 			a.footer-link.footer-link-email(href='#mail') ОТПРАВИТЬ E-MAIL
 		p.footer-text

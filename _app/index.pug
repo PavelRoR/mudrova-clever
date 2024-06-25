@@ -22,7 +22,7 @@ mixin img(cl,src,alt)
 	img(class=cl src!=src alt=alt)
 mixin gt(cl, img, h3)
 	.general-title(class=cl)
-		+img('', img, h3!=h3)
+		+img('', img, alt!=h3)
 		h3!=h3
 mixin b(cl, href, p, id, target)
 	a.button(class=cl href=href id=id target=target)!=p
