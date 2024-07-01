@@ -9,11 +9,11 @@ $textarea = $_POST['textarea'];
 $mess = "Проект: ".$project."\r\nИмя: ".$name."\r\nПочта: ".$email."\r\nТелефон: ".$tel."\r\nСообщение: ".$textarea;
 
 $headers = array(
-  'From' => 'anorcclever@yandex.ru',
+  'From' => 'site@cleverano.ru',
   'X-Mailer' => 'PHP/' . phpversion()
 );
 
-$mail = mail('anorcclever@yandex.ru', 'Заявка с Clever', $mess, $headers);
+$mail = mail('site@cleverano.ru', 'Заявка с Clever', $mess, $headers);
 // Отправляем
 if ($mail) {
   require('thanks/index.php');
